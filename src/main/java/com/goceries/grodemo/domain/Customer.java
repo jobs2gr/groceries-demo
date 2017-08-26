@@ -3,12 +3,13 @@ package com.goceries.grodemo.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * Created by developer on 8/26/17.
  */
 @Entity
-public class Customer {
+public class Customer implements Serializable {
     @Id
     private long id;
 
